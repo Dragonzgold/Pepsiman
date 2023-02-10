@@ -1,0 +1,852 @@
+@font-face {
+    font-family: "Pepsiman";
+    src: url("../fonts/PEPSI_pl.ttf");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.lataPepsi{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 5vw;
+    top: 11vh;
+    left: 5vw;
+}
+
+.lataPepsi2{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 5vw;
+    top: 11vh;
+    right: 5vw;
+}
+
+@keyframes rotate {from {transform: rotate(0deg);} to {transform: rotate(360deg);}}
+@-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);} to {-webkit-transform: rotate(360deg);}}
+
+.lataPepsi{
+    transform: translateX(-50%);
+    animation: rotate 2s linear infinite;
+    -webkit-animation: rotate 2s linear infinite;
+}
+
+.lataPepsi2{
+    transform: translateX(-50%);
+    animation: rotate 2s linear infinite;
+    -webkit-animation: rotate 2s linear infinite;
+}
+
+.pepsimanPresentacion{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+.containerPrincipal{
+    width: 69vw;
+    height: 20vh;
+    background-color: rgb(43, 134, 237);
+    position: relative;
+    left: 15vw;
+    text-align: center;
+    top: 8vh;
+    border-radius: 50px;
+    border-color: rgb(10, 193, 238) rgb(5, 50, 186);
+    border-width: 10px;
+    border-style: inset;
+    
+}
+
+.titulo{
+    padding-top: 5vh;
+    font-family: Pepsiman;
+    font-size: 5vw;
+}
+
+@media screen and (max-width: 700px){
+    .titulo{
+        padding-top: 7vh;
+        font-size: 8vw;
+    }
+}
+
+.pepsimanLike{
+    width: 5vw;
+    height: 20vh;
+    position: absolute;
+    top: 0;
+    left: 5vw;
+}
+
+.pepsimanLike2{
+    width: 5vw;
+    height: 20vh;
+    position: absolute;
+    top: 0;
+    right: 5vw;
+}
+
+@media screen and (max-width: 1000px){
+
+    .titulo{
+        padding-top: 6vh;
+        font-size: 7vw;
+    }
+
+    .pepsimanLike{
+        width: 10vw;
+        height: 20vh;
+        position: absolute;
+        top: 0;
+        left: 2vw;
+    }
+    
+    .pepsimanLike2{
+        width: 10vw;
+        height: 20vh;
+        position: absolute;
+        top: 0;
+        right: 2vw;
+    }
+
+    .lataPepsi{
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .lataPepsi2{
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        width: 0;
+        height: 0;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .titulo{
+        padding-top: 4vh;
+        font-size: 6vw;
+    }
+
+    .containerPrincipal{
+        height: 11vh;
+    }
+
+
+    .pepsimanLike{
+        width: 10vw;
+        height: 10vh;
+        position: absolute;
+        left: 2vw;
+    }
+    
+    .pepsimanLike2{
+        width: 10vw;
+        height: 10vh;
+        position: absolute;
+        right: 2vw;
+    }
+}
+
+.containerIndice{
+    position: relative;
+    top: 15vh;
+    left: 3vw;
+    width: 30vw;
+    height: 40vh;
+    background-color: rgb(3, 145, 233);
+}
+
+.listaOrdenada{
+    text-align: center;
+    list-style-position: inside;
+}
+
+li{
+    font-size: 1.9vw;
+    font-family: Pepsiman;
+    padding-top: 2vh;
+}
+
+@media screen and (max-width: 1000px){
+
+    li{
+        padding-top: 3vh;
+        font-size: 2.8vw;
+    }
+}
+
+@media screen and (max-width: 700px){
+
+    .inicioI{
+        padding-top: 0vh;
+    }
+
+    li{
+        font-size: 2.5vw;
+    }
+
+    .containerIndice{
+        height: 20vh;
+    }
+}
+
+.containerVideo{
+    position: relative;
+    top: -25vh;
+    left: 51vw;
+    width: 45vw;
+    height: 60vh;
+    background-color: chartreuse;
+}
+
+
+.videoPepsi{
+    width: 45vw;
+    height: 60vh;
+    border-color: rgb(10, 193, 238) rgb(5, 50, 186);
+    border-width: 10px;
+    border-style: inset;
+}
+
+@media screen and (max-width: 700px){
+    .containerVideo{
+        top: 20vh;
+        left: 0vw;
+        width: 38vw;
+        height: 20vh;
+    }
+
+    .videoPepsi{
+        width: 97vw;
+        height: 38vh;
+    }
+}
+
+.pepsimanPresentacion2{
+    top: 100vh;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+.containerQuien{
+    position: relative;
+    display: block;
+    text-align: center;
+    width: 69vw;
+    height: 10vh;
+    background-color: rgb(43, 134, 237);
+    left: 15vw;
+    border-color: rgb(10, 193, 238) rgb(5, 50, 186);
+    border-width: 5px;
+    border-style: inset;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin-top: -12vh;
+}
+
+.esferaPepsi1{
+    position: absolute;
+    width: 5vw;
+    height: 5vh;
+    right: 14vw;
+    top: 2.5vh;
+}
+
+.esferaPepsi2{
+    position: absolute;
+    width: 5vw;
+    height: 5vh;
+    left: 14vw;
+    top: 2.5vh;
+}
+
+.tituloQuienPepsi{
+    position: relative;
+    font-family: Pepsiman;
+    font-size: 3vw;
+    padding-top: 2vh;
+}
+
+.texto1{
+    position: relative;
+    margin-top: 3vh;
+    padding-top: 2vh;
+    padding-left: 1vw;
+    width: 80vw;
+    height: 40vh;
+    left: 9vw;
+    background-color: rgb(0, 128, 255);
+    font-family: Pepsiman;
+    font-size: 3vh;
+    line-height: 5vh;
+    overflow: auto;
+    border-radius: 30px;
+    border-color: rgb(5, 50, 186) rgb(10, 193, 238);
+    border-width: 10px;
+    border-style: inset;
+}
+
+.pepsimanGracias{
+    width: 20vw;
+    height: 30vh;
+    float: right;
+}
+
+@media screen and (max-width: 1000px){
+
+    .tituloQuienPepsi{
+        font-size: 4vw;
+        padding-top: 3vh;
+    }
+
+    .esferaPepsi1{
+        right: 8vw;
+    }
+
+    .esferaPepsi2{
+        left: 8vw;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+
+    .containerQuien{
+        top: 60vh;
+    }
+
+    .tituloQuienPepsi{
+        font-size: 5vw;
+        padding-top: 3vh;
+    }
+
+    .esferaPepsi1{
+        right: 3vw;
+    }
+
+    .esferaPepsi2{
+        left: 3vw;
+    }
+
+    .texto1{
+        top: 60vh;
+        width: 80vw;
+        height: 40vh;
+        font-size: 3vh;
+        line-height: 5vh;
+        overflow: scroll;
+    }
+
+    .pepsimanGracias{
+        width: 30vw;
+        height: 30vh;
+        float: right;
+    }
+
+}
+
+.containerOrigen{
+    margin-top: 20vh;
+    position: relative;
+    display: block;
+    text-align: center;
+    width: 69vw;
+    height: 10vh;
+    background-color: rgb(43, 134, 237);
+    left: 15vw;
+    border-color: rgb(10, 193, 238) rgb(5, 50, 186);
+    border-width: 5px;
+    border-style: inset;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.tituloOrigenPepsiman{
+    position: relative;
+    font-family: Pepsiman;
+    font-size: 3vw;
+    padding-top: 2vh;
+}
+
+.esferaPepsi3{
+    position: absolute;
+    width: 5vw;
+    height: 5vh;
+    right: 13vw;
+    top: 2.5vh;
+}
+
+.esferaPepsi4{
+    position: absolute;
+    width: 5vw;
+    height: 5vh;
+    left: 13vw;
+    top: 2.5vh;
+}
+
+.texto2{
+    position: relative;
+    margin-top: 3vh;
+    padding-top: 2vh;
+    padding-left: 1vw;
+    width: 80vw;
+    height: 40vh;
+    left: 9vw;
+    background-color: rgb(0, 128, 255);
+    font-family: Pepsiman;
+    font-size: 3.5vh;
+    line-height: 5vh;
+    overflow: auto;
+    border-radius: 30px;
+    border-color: rgb(5, 50, 186) rgb(10, 193, 238);
+    border-width: 10px;
+    border-style: inset;
+}
+
+.pepsimanJojos{
+    width: 20vw;
+    height: 30vh;
+    float: left;
+    margin-right: 2vw;
+}
+
+.pepsimanPresentacion3{
+    top: 200vh;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+@media screen and (max-width: 1000px){
+
+    .tituloOrigenPepsiman{
+        font-size: 4vw;
+        padding-top: 3vh;
+    }
+
+    .esferaPepsi3{
+        right: 7vw;
+    }
+
+    .esferaPepsi4{
+        left: 7vw;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+
+    .containerOrigen{
+        top: 47vh;
+    }
+
+    .texto2{
+        top: 48vh;
+        width: 80vw;
+        height: 40vh;
+        font-size: 3vh;
+        line-height: 5vh;
+        overflow: scroll;
+    }
+
+    .pepsimanJojos{
+        margin-right: 5vw;
+    }
+
+    .tituloOrigenPepsiman{
+        font-size: 5vw;
+        padding-top: 3.5vh;
+    }
+
+    .esferaPepsi3{
+        right: 1vw;
+    }
+
+    .esferaPepsi4{
+        left: 1vw;
+    }
+}
+
+.containerCuriosidades{
+    margin-top: 20vh;
+    position: relative;
+    display: block;
+    text-align: center;
+    width: 69vw;
+    height: 10vh;
+    background-color: rgb(43, 134, 237);
+    left: 15vw;
+    border-color: rgb(10, 193, 238) rgb(5, 50, 186);
+    border-width: 5px;
+    border-style: inset;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.tituloCuriosidades{
+    position: relative;
+    font-family: Pepsiman;
+    font-size: 3vw;
+    padding-top: 2vh;
+}
+
+.pepsimanPresentacion4{
+    top: 300vh;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+.esferaPepsi5{
+    position: absolute;
+    width: 5vw;
+    height: 5vh;
+    right: 7.5vw;
+    top: 2.5vh;
+}
+
+.esferaPepsi6{
+    position: absolute;
+    width: 5vw;
+    height: 5vh;
+    left: 7.5vw;
+    top: 2.5vh;
+}
+
+.texto3{
+    position: relative;
+    margin-top: 3vh;
+    padding-top: 2vh;
+    padding-left: 3vw;
+    width: 78vw;
+    height: 40vh;
+    left: 9vw;
+    background-color: rgb(0, 128, 255);
+    font-family: Pepsiman;
+    font-size: 3.5vh;
+    line-height: 5vh;
+    overflow: auto;
+    border-radius: 30px;
+    border-color: rgb(5, 50, 186) rgb(10, 193, 238);
+    border-width: 10px;
+    border-style: inset;
+}
+
+@media screen and (max-width: 1000px){
+
+    .tituloCuriosidades{
+        font-size: 4vw;
+        padding-top: 3vh;
+    }
+
+    .esferaPepsi5{
+        right: 0vw;
+    }
+
+    .esferaPepsi6{
+        left: 0vw;
+    }
+}
+
+@media screen and (max-width: 700px){
+
+    .texto3{
+        top: 40vh;
+        width: 80vw;
+        height: 40vh;
+        font-size: 3vh;
+        line-height: 5vh;
+        overflow: scroll;
+    }
+
+    .containerCuriosidades{
+        top: 35vh;
+    }
+
+    .tituloCuriosidades{
+        font-size: 5vw;
+        padding-top: 2vh;
+    }
+
+    .esferaPepsi5{
+        right: 1vw;
+    }
+
+    .esferaPepsi6{
+        left: 1vw;
+    }
+}
+
+.containerVideos{
+    margin-top: 20vh;
+    position: relative;
+    display: block;
+    text-align: center;
+    width: 69vw;
+    height: 10vh;
+    background-color: rgb(43, 134, 237);
+    left: 15vw;
+    border-color: rgb(10, 193, 238) rgb(5, 50, 186);
+    border-width: 5px;
+    border-style: inset;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.tituloVideos{
+    position: relative;
+    font-family: Pepsiman;
+    font-size: 3vw;
+    padding-top: 2vh;
+}
+
+.esferaPepsi7{
+    position: absolute;
+    width: 5vw;
+    height: 5vh;
+    right: 13vw;
+    top: 2.5vh;
+}
+
+.esferaPepsi8{
+    position: absolute;
+    width: 5vw;
+    height: 5vh;
+    left: 13vw;
+    top: 2.5vh;
+}
+.pepsimanPresentacion5{
+    top: 400vh;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+.ListaVideos{
+    position: relative;
+    margin-top: 3vh;
+    padding-top: 2vh;
+    padding-left: 3vw;
+    width: 78vw;
+    height: 200vh;
+    left: 9vw;
+    background-color: rgb(0, 128, 255);
+    font-family: Pepsiman;
+    font-size: 3.5vh;
+    line-height: 5vh;
+    overflow: auto;
+    border-radius: 30px;
+    border-color: rgb(5, 50, 186) rgb(10, 193, 238);
+    border-width: 10px;
+    border-style: inset;
+}
+
+.historiaPepeelmago{
+    margin-top: 20vh;
+    margin-left: 17vw;
+    margin-top: 50vh;
+    border-color: rgb(5, 50, 186) rgb(10, 193, 238);
+    border-width: 5px;
+    border-style: inset;
+    display: inline;
+    font-size: 3vw;
+}
+
+.videoPepeelmago{
+    position: relative;
+    width: 50vw;
+    height: 50vh;
+    padding-top: 4vh;
+    padding-left: 12vw;
+}
+
+.videoComercial{
+    position: relative;
+    display: inline-block;
+    top: 7vh;
+    margin-left: 14.5vw;
+    font-size: 3vw;
+    border-color: rgb(5, 50, 186) rgb(10, 193, 238);
+    border-width: 5px;
+    border-style: inset;
+}
+
+.videoComercialV{
+    position: relative;
+    width: 50vw;
+    height: 50vh;
+    padding-top: 10vh;
+    padding-left: 13vw;
+}
+
+.pepsimanPresentacion6{
+    top: 500vh;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+.videoReseña{
+    position: relative;
+    display: inline-block;
+    top: 7vh;
+    margin-left: 20vw;
+    font-size: 3vw;
+    border-color: rgb(5, 50, 186) rgb(10, 193, 238);
+    border-width: 5px;
+    border-style: inset;
+}
+
+.reseña{
+    position: relative;
+    width: 50vw;
+    height: 50vh;
+    padding-top: 10vh;
+    padding-left: 13vw;
+}
+
+@media screen and (max-width: 700px){
+
+    .containerVideos{
+        top: 28vh;
+        font-size: 3vh;
+        line-height: 5vh;
+    }
+
+    .ListaVideos{
+        top: 32vh;
+        width: 80vw;
+        height: 200vh;
+        font-size: 3vh;
+        line-height: 5vh;
+        overflow: scroll;
+    }
+
+}
+
+.lataPepsi3{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 5vw;
+    top: 3vh;
+    left: 3vw;
+    transform: translateX(-50%);
+    animation: rotate 2s linear infinite;
+    -webkit-animation: rotate 2s linear infinite;
+}
+
+.lataPepsi4{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 5vw;
+    top: 3vh;
+    right: 3vw;
+    transform: translateX(-50%);
+    animation: rotate 2s linear infinite;
+    -webkit-animation: rotate 2s linear infinite;
+}
+
+.lataPepsi5{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 5vw;
+    top: 180vh;
+    left: 3vw;
+    transform: translateX(-50%);
+    animation: rotate 2s linear infinite;
+    -webkit-animation: rotate 2s linear infinite;
+}
+
+.lataPepsi6{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 5vw;
+    top: 180vh;
+    right: 3vw;
+    transform: translateX(-50%);
+    animation: rotate 2s linear infinite;
+    -webkit-animation: rotate 2s linear infinite;
+}
+
+.lataPepsi7{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 0vw;
+    top: 565vh;
+    right: 42vw;
+    transform: translateX(-50%);
+    animation: rotate 2s linear infinite;
+    -webkit-animation: rotate 2s linear infinite;
+}
+
+@media screen and (max-width: 1000px) {
+    .lataPepsi3{
+        width: 0;
+        height: 0;
+    }
+    
+    .lataPepsi4{
+        width: 0;
+        height: 0;
+    }
+    
+    .lataPepsi5{
+        width: 0;
+        height: 0;
+    }
+    
+    .lataPepsi6{
+        width: 0;
+        height: 0;
+    }
+
+    .lataPepsi7{
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        width: 20vw;
+        top: 565vh;
+        right: 42vw;
+        transform: translateX(-50%);
+        animation: rotate 2s linear infinite;
+        -webkit-animation: rotate 2s linear infinite;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .lataPepsi7{
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        width: 45vw;
+        top: 545vh;
+        right: 30vw;
+        transform: translateX(-50%);
+        animation: rotate 2s linear infinite;
+        -webkit-animation: rotate 2s linear infinite;
+    }
+}
